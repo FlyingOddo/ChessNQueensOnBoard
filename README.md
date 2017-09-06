@@ -1,7 +1,7 @@
 # ChessNQueensOnBoard
 
 This is a solution for the n queens on the board chess puzzle.
-As example you have to put eight queens on a board with a size of 8x8 fields. 
+As an example you have to put eight queens on a board with a size of 8x8 fields. 
 No queen should attack another one.
 
 In this case the solution could look like this:<br>
