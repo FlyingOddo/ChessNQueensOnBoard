@@ -18,7 +18,7 @@ public class Queen {
 		placeQueens(0, chessRow.length);
 	}
 	
-	public void placeQueens(int r, int n) {
+	public void placeQueens(int row, int n) {
 		numTries++;
 
 		/* set the first row to the secound field */
@@ -26,31 +26,31 @@ public class Queen {
 			chessRow[0] = 1;
 		}
 
-		for (int c = 0; c < n; c++) {
+		for (int column = 0; column < n; column++) {
 
-			if (r >= 1) {
-				if (chessRow[r - 1] + 2 <= n && firstKnightRound == false) {
-					c = chessRow[r - 1] + 2;
-				} else if (chessRow[r - 1] + 2 > n) {
+			if (row >= 1) {
+				if (chessRow[row - 1] + 2 <= n && firstKnightRound == false) {
+					column = chessRow[row - 1] + 2;
+				} else if (chessRow[row - 1] + 2 > n) {
 					firstKnightRound = true;
 
 				}
 			}
 
-			if (checkPositionQueen(r, c)) {
-				chessRow[r] = c;
+			if (checkPositionQueen(row, column)) {
+				chessRow[row] = column;
 				/*
 				 * skip the next column bc thats not possible to set the queen
 				 * there
 				 */
-				c++;
+				column++;
 
-				if (r == n - 1) {
+				if (row == n - 1) {
 					printResult(chessRow);
 					return;
 				} else {
 					if (finished == false) {
-						placeQueens(r + 1, n);
+						placeQueens(row + 1, n);
 					}
 				}
 			}
@@ -70,9 +70,9 @@ public class Queen {
 	public void printResult(int[] queens) {
 		int N = queens.length;
 		
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if (queens[i] == j) {
+		for (int row = 0; row < N; row++) {
+			for (int column = 0; column < N; column++) {
+				if (queens[row] == column) {
 					System.out.print("O ");
 
 				} else {
