@@ -16,6 +16,6 @@ X X X X O X X X
 
 (X == empty field, O == Queen).
 
-There are many bruteforce solutions on the internet. This is also a kind of brute force solution with the different that this programm respect a special structurs. My programm only show the first possible solution. This solution is pretty fast. With normal brute force it could take a realy long time, to get a result on a e.g. 1000x1000 field. This method bring a result in just some secounds. 
+There are many brute force solutions on the internet. This is also a kind of brute force solution with the different that this programm respect a special structure. The program only show the first possible result. This solution is pretty fast. With normal brute force it could take a realy long time, to get a result on a e.g. 1000x1000 field. This method bring a result in just some secounds. 
 
 
