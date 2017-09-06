@@ -5,17 +5,17 @@ public class Queen {
 	boolean finished = false;
 	boolean firstKnightRound = false;
 
-	public Queen(int N) { 
-		chessRow = new int[N];
+	public Queen(int n) { 
+		chessRow = new int[n];
 	}
 	
 	public static void main(String args[]) {
 		Queen Q = new Queen(10);
-		Q.callplaceQueens();
+		Q.placeQueen();
 	}
 	
 	public void callplaceQueens() {
-		placeQueens(0, chessRow.length);
+		placeQueen(0, chessRow.length);
 	}
 	
 	public void placeQueens(int r, int n) {
