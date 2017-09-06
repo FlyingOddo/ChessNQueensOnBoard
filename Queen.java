@@ -11,11 +11,11 @@ public class Queen {
 	
 	public static void main(String args[]) {
 		Queen Q = new Queen(10);
-		Q.placeQueen();
+		Q.startPlace();
 	}
 	
-	public void callplaceQueens() {
-		placeQueen(0, chessRow.length);
+	public void startPlace() {
+		placeQueens(0, chessRow.length);
 	}
 	
 	public void placeQueens(int r, int n) {
